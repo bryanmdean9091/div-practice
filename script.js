@@ -6,17 +6,41 @@ let childNum = [  '1', '2', '3', '4', '5', '6']
 let ran = childNum[Math.floor(Math.random()*childNum.length)]
 console.log(ran)
 
-// for (let i = 0; i < 6; i++
-
-let count = 0;
-
-
+let count = 1;
 
  btn.addEventListener('click', ()=> {
-    count++
-    document.getElementsByClassName(`child${count}`)[0].style.backgroundColor = `${ranColor}`
-    
-    if (count > 5){
+    setTimeout(()=> {
+        document.getElementsByClassName(`child${count}`)[0].style.backgroundColor = `${ranColor}`
+    }, 100
+    )
+    setTimeout(()=> {
+        count++;
+        document.getElementsByClassName(`child${count}`)[0].style.backgroundColor = `${ranColor}`
+    }, 1000
+    )
+    setTimeout(()=> {
+        count++;
+        document.getElementsByClassName(`child${count}`)[0].style.backgroundColor = `${ranColor}`
+    }, 1500
+    )
+    setTimeout(()=> {
+        count++;
+        document.getElementsByClassName(`child${count}`)[0].style.backgroundColor = `${ranColor}`
+    }, 1800
+    )
+    setTimeout(()=> {
+        count++;
+        document.getElementsByClassName(`child${count}`)[0].style.backgroundColor = `${ranColor}`
+    }, 2000
+    )
+    setTimeout(()=> {
+        count++;
+        document.getElementsByClassName(`child${count}`)[0].style.backgroundColor = `${ranColor}`
+    }, 2300
+    )
+    setTimeout(()=> {
+        count++;
         window.location.reload()
-    }
+    }, 4000
+    )  
 })
