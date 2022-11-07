@@ -24,7 +24,7 @@ body {
     justify-content: center;
 }
 
-button {
+#push {
    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -39,6 +39,21 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+.reset {
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background: black;
+    color: white;
+    padding: .75rem;
 }
 
 .child2 {
@@ -83,7 +98,6 @@ h1 {
     width:90%;
     display: flex;
     align-items: center;
-    background-color: ;
 }
 
 .child6 {
